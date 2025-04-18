@@ -8,9 +8,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+//enables Component scanning
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
-
+    //inject EmployeeDAO
     private EmployeeDAO employeeDAO;
 
     @Autowired
